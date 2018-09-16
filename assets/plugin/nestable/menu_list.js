@@ -5,7 +5,7 @@ $(document).ready(function () {
 
         $.ajax({
             method: "POST",
-            url: base_url+"uetadmin/menu/savelist",
+            url: base_url+"vnsadmin/menu/savelist",
             data: {
                 list: list.nestable('serialize')
             }
