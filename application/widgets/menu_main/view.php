@@ -1,12 +1,12 @@
-<ul class="nav-menu menu">
-    <li class="menu-item visible-xs ">
-        <ul class="list-inline login_xs_1">
-            <li class=""><a href="<?=base_url();?>" title="đăng ký - vnsoft.net">Đăng Ký</a></li>
-            <li class=""><a href="<?=base_url();?>">|</a></li>
-            <li class=""><a href="<?=base_url();?>" title="đăng nhập - vnsoft.net">Đăng Nhập</a></li>
-        </ul>
-    </li>
-    <?php if(count($menu_root)) : ?>
+
+
+<ul class="nav-menu menu clearfix">
+	<li class="menu-item has-dropdown is-active">
+		<a href="" class="menu-link">
+			<p><?= lang('home'); ?></p>
+		</a>
+	</li>
+	<?php if(count($menu_root)) : ?>
         <?php foreach ($menu_root as $key_r => $mr) : ?>
             <li class="menu-item new-hot <?php if(!empty($mr->menu_sub)): ?> has-dropdown<?php endif;?>">
                 <a href="<?=base_url($mr->url);?>" title="<?=@$mr->name?> - vnsoft.net" class="menu-link ">
@@ -24,4 +24,9 @@
             </li>
         <?php endforeach;?>
     <?php endif;?>
+	<li class="menu-item">
+		<a href="<?= base_url('lien-he')?>" class="menu-link">
+			<p><?= lang('contact')?></p>
+		</a>
+	</li>
 </ul>

@@ -166,7 +166,7 @@ function view_news_cate_table($data,$parent,$text,$show_home,$show_hot,$show_foc
             ($v->focus == 1)?$focus='background:#'.$show_focus->color.'':$focus='';
             ($v->hot == 1)?$hot='background:#'.$show_hot->color.'':$hot='';
             ($v->coupon == 1)?$coupon='background:#'.$show_coupon->color.'':$coupon='';
-            ($show_home->active == 0)?$an1='hidden':$an1='';
+            ($show_home->active == 0)?$an1='':$an1='';
             ($show_hot->active == 0)?$an2='hidden':$an2='';
             ($show_focus->active == 0)?$an3='hidden':$an3='';
             ($show_coupon->active == 0)?$an4='hidden':$an4='';

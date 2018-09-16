@@ -11,7 +11,7 @@
             $this->load->helper('language');
 			$this->load->helper('url');
             //language
-            $weblang=array('vi'=>'vietnamese','en'=>'english',);
+            $weblang=array('vi'=>'vietnamese','en'=>'english','ja'=>'japanese');
             if($this->session->userdata('lang')&&$this->session->userdata('lang')!=null){
                 $lang=$weblang[$this->session->userdata('lang')];
                 
@@ -64,17 +64,12 @@
             $data['product_cathot'] = $this->system_model->get_data('product_category',array('hot'=>'1','lang' => $this->language),
                 array('sort'=>''),1,5
             );
-
             $data['product_cate'] = $this->system_model->get_data('product_category',array('lang' => $this->language),
                 array('sort'=>''),1,5
             );
-
             $data['menu_main'] = $this->load->widget('menu_main');
-            /*begin load left*///$data['home_left'] =$this->load->widget('home_left');/*end load left*/
-            /*begin load right*///$data['home_right'] =$this->load->widget('home_right');/*end load right*/
             if($show_slider==true){
                 $data['slide'] = $this->load->widget('slide');
-                //var_dump($data['slide']);die;
             }else{
                 $data['slide']='';
             }

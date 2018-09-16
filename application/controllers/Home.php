@@ -17,80 +17,14 @@ class Home extends MY_Controller
         }
     }
 
-    public function index2($var1 = null){
-        if($var1 == null)
-        {
-            $this->home();
-        }else{
-            $item = $this->f_homemodel->getFirstRowWhere('alias',array(
-                'alias' => $var1
-            ));
-            if(empty($item)){
-				 redirect(base_url('404_override'));
-            }
-            $type = $item->type;
-            switch($type){
-                case 'cate-pro':
-                    $this->load->_control('Products');
-                    $this->products->pro_bycategory($item->pro_cat,$var1);
-                    break;
-                case 'pro':
-                    $this->load->_control('products');
-                    $this->products->detail($item->pro,$var1);
-                    break;
-                case 'hangsx':
-                    $this->load->_control('products');
-                    $this->products->hangsx($var1);
-                    break;
-                case 'cate-new' :
-                    $this->load->_control('news');
-                    $this->news->news_bycat($item->new_cat,$var1);
-                    break;
-                case 'new':
-                    $this->load->_control('news');
-                    $this->news->detail($item->new_cat,$var1);
-                    break;
-                case 'm-cat':
-                    $this->load->_control('media');
-                    $this->media->category($item->m_cat,$var1);
-                    break;
-                case 'media':
-                    $this->load->_control('media');
-                    $this->media->detail($var1);
-                    break;
-                case 'page':
-					$this->load->_control('pages');
-                    $this->pages->page_content($var1);
-					break;
-				case 'cat_inuser':
-                    $this->load->_control('contact');
-                    $this->contact->inuser_detail($var1);
-                    break;
-            }
-        }
-    }
-
     public function index(){ //uh code ci3 k chay dc kieu kia cho nen phai viet lại @@ vẫn chạy đc mà â cac router khac nhu contact , vnsadmin co chay dau
         $this->clear_all_cache();
         $data = array();
-         /*begin controller home*//*end controller home*/
-		 
-		 $data['danhmuc'] = $this->load->widget('danhmuc');
-		 $data['product_noibat'] = $this->load->widget('product_noibat');
-		 
-		 $data['product_cat_home'] = $this->load->widget('product_cat_home');
-		 
-		  $data['news_nb'] = $this->load->widget('news_nb');
-		  $data['support'] = $this->load->widget('support');
-		  $data['ykienkhachhang'] = $this->load->widget('ykienkhachhang');
-		  $data['product_noibat'] = $this->load->widget('product_noibat_home');
-        $data['product_cate'] = $this->system_model->get_data('product_category',array('parent_id' => 0,'lang' => $this->language),
-            array('sort'=>''),1,5
-        );
-		 
-		 
-		 
-         /*begin slide_header*/$data['slide'] = $this->load->widget('slide');/*end slide_header*/
+        /*begin controller home*//*end controller home*/
+		$data['ykienkhachhang'] = $this->load->widget('ykienkhachhang');
+        /*begin slide_header*/
+		$data['slide'] = $this->load->widget('slide');
+		/*end slide_header*/
         $seo = array();
         $this->LoadHeader($view=null,$seo,true);
         $this->load->view('home/view_home',$data);
