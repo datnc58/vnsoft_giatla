@@ -142,7 +142,7 @@ function view_module_cate_table($data,$parent=0,$text=''){
 					<td class='text-center'>
 						<div onclick=\"getModal_module($v->id)\"
 							class=\"btn btn-xs btn-default\" title=\"Sửa\"><i class=\"fa fa-pencil\"></i></div>
-						<a href='".base_url('uetadmin/group/deletecategory/' . $v->id)."'
+						<a href='".base_url('vnsadmin/group/deletecategory/' . $v->id)."'
 						   onclick=\"return confirm('Bạn có chắc chắn muốn xóa?')\"
 						   class=\"btn btn-xs btn-danger\"title=\"Xóa\" style=\"color: #fff\"><i class=\"fa fa-times\"></i> </a>
 					</td>
@@ -195,9 +195,9 @@ function view_news_cate_table($data,$parent,$text,$show_home,$show_hot,$show_foc
                     </td>
 
                 <td class='text-center'>
-					<a href='".base_url('uetadmin/news/cat_edit/' . $v->id)."'
+					<a href='".base_url('vnsadmin/news/cat_edit/' . $v->id)."'
                         class=\"btn btn-xs btn-default\" title=\"Sửa\"><i class=\"fa fa-pencil\"></i></a>
-					<a href='".base_url('uetadmin/news/deletecategory/' . $v->id)."'
+					<a href='".base_url('vnsadmin/news/deletecategory/' . $v->id)."'
                        onclick=\"return confirm('Bạn có chắc chắn muốn xóa?')\"
                        class=\"btn btn-xs btn-danger\"title=\"Xóa\" style=\"color: #fff\"><i class=\"fa fa-times\"></i> </a>
                     </td>
@@ -231,7 +231,7 @@ function view_product_cate_table($data,$parent=0,$text='',$show_home,$show_hot,$
                      <td><input type=\"number\" onchange=\"update_sort($(this))\" value=\"$v->sort\"
 								data-placement='product_category' data-item='$v->id' style=\"width: 55px\">
                     </td>
-                    <td><a href='".base_url('uetadmin/product/cat_edit/' . $v->id)."'
+                    <td><a href='".base_url('vnsadmin/product/cat_edit/' . $v->id)."'
                          title=\"Sửa\">".$text.$v->name."</a></td>
                     <td>$img</td>
                     <td class=\"text-center\">
@@ -251,9 +251,9 @@ function view_product_cate_table($data,$parent=0,$text='',$show_home,$show_hot,$
                     </td>
 
                 <td class='text-center'>
-					<a href='".base_url('uetadmin/product/cat_edit/' . $v->id)."'
+					<a href='".base_url('vnsadmin/product/cat_edit/' . $v->id)."'
                         class=\"btn btn-xs btn-default\" title=\"Sửa\"><i class=\"fa fa-pencil\"></i></a>
-					<a href='".base_url('uetadmin/product/deletecategory/' . $v->id)."'
+					<a href='".base_url('vnsadmin/product/deletecategory/' . $v->id)."'
                        onclick=\"return confirm('Bạn có chắc chắn muốn xóa?')\"
                        class=\"btn btn-xs btn-danger\"title=\"Xóa\" style=\"color: #fff\"><i class=\"fa fa-times\"></i> </a>
                     </td>
@@ -300,9 +300,9 @@ function view_raovat_cate_table($data,$parent=0,$text='',$show_home,$show_hot,$s
                     </td>
 
                 <td class='text-center'>
-					<a href='".base_url('uetadmin/raovat/cat_edit/' . $v->id)."'
+					<a href='".base_url('vnsadmin/raovat/cat_edit/' . $v->id)."'
                         class=\"btn btn-xs btn-default\" title=\"Sửa\"><i class=\"fa fa-pencil\"></i></a>
-					<a href='".base_url('uetadmin/raovat/deletecategory/' . $v->id)."'
+					<a href='".base_url('vnsadmin/raovat/deletecategory/' . $v->id)."'
                        onclick=\"return confirm('Bạn có chắc chắn muốn xóa?')\"
                        class=\"btn btn-xs btn-danger\"title=\"Xóa\" style=\"color: #fff\"><i class=\"fa fa-times\"></i> </a>
                     </td>
@@ -354,9 +354,9 @@ function view_media_cate_table($data,$parent=0,$text='',$show_home,$show_hot,$sh
                     </td>
 
                 <td class='text-center'>
-					<a href='".base_url('uetadmin/media/cat_edit/' . $v->id)."'
+					<a href='".base_url('vnsadmin/media/cat_edit/' . $v->id)."'
                         class=\"btn btn-xs btn-default\" title=\"Sửa\"><i class=\"fa fa-pencil\"></i></a>
-					<a href='".base_url('uetadmin/media/deletecategory/' . $v->id)."'
+					<a href='".base_url('vnsadmin/media/deletecategory/' . $v->id)."'
                        onclick=\"return confirm('Bạn có chắc chắn muốn xóa?')\"
                        class=\"btn btn-xs btn-danger\"title=\"Xóa\" style=\"color: #fff\"><i class=\"fa fa-times\"></i> </a>
                     </td>
@@ -403,9 +403,9 @@ function view_video_cate_table($data,$parent=0,$text='',$show_home,$show_hot,$sh
                     </td>
 
 					<td class='text-center'>
-						<a href='".base_url('uetadmin/video/cat_edit/' . $v->id)."'
+						<a href='".base_url('vnsadmin/video/cat_edit/' . $v->id)."'
 							class=\"btn btn-xs btn-default\" title=\"Sửa\"><i class=\"fa fa-pencil\"></i></a>
-						<a href='".base_url('uetadmin/video/deletecategory/' . $v->id)."'
+						<a href='".base_url('vnsadmin/video/deletecategory/' . $v->id)."'
 						   onclick=\"return confirm('Bạn có chắc chắn muốn xóa?')\"
 						   class=\"btn btn-xs btn-danger\"title=\"Xóa\" style=\"color: #fff\"><i class=\"fa fa-times\"></i> </a>
 					</td>
@@ -430,9 +430,9 @@ function view_doc_cate_table($data,$parent=0,$text=''){
                     <td>".$text.$v->name."</td>
 
                     <td class='text-center'>
-                        <a href='".base_url('uetadmin/admin/document_edit/' . $v->id)."'
+                        <a href='".base_url('vnsadmin/admin/document_edit/' . $v->id)."'
                             class=\"btn btn-xs btn-default\" title=\"Sửa\"><i class=\"fa fa-pencil\"></i></a>
-                        <a href='".base_url('uetadmin/admin/deletedocument/' . $v->id)."'
+                        <a href='".base_url('vnsadmin/admin/deletedocument/' . $v->id)."'
                            onclick=\"return confirm('Bạn có chắc chắn muốn xóa?')\"
                            class=\"btn btn-xs btn-danger\"title=\"Xóa\" style=\"color: #fff\"><i class=\"fa fa-times\"></i> </a>
                     </td>
@@ -620,8 +620,8 @@ function view_menu_admin($data,$parent=0,$text=''){
 								 <div class="btn-group link_v">
 									<button class="btn dropdown-toggle drop_action" data-toggle="dropdown"><span class="caret"></span></button>
 									<ul class="dropdown-menu" style="min-width: 40px !important; padding: 5px">
-									  <li><a href="'.base_url('uetadmin/menu/edit/' . $v->id.'?p='.$v->position.'').'" style="color: #0011ca">Sửa</a></li>
-									  <li><a href="'.base_url('uetadmin/menu/delete/' . $v->id).'"style="color: red"onclick="return confirm(\'Bạn có chắc chắn muốn xóa?\')" >Xóa</a></li>
+									  <li><a href="'.base_url('vnsadmin/menu/edit/' . $v->id.'?p='.$v->position.'').'" style="color: #0011ca">Sửa</a></li>
+									  <li><a href="'.base_url('vnsadmin/menu/delete/' . $v->id).'"style="color: red"onclick="return confirm(\'Bạn có chắc chắn muốn xóa?\')" >Xóa</a></li>
 									</ul>
 								  </div>
 								 </div>

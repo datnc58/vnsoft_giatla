@@ -6,7 +6,7 @@
 
           <h1>
 
-            QTS Hướng dẫn quản trị
+            VNSOFT.NET Hướng dẫn quản trị
 
           </h1>
 

@@ -34,7 +34,7 @@ class Defaults extends MY_Controller
             if($this->input->post('username') && trim($this->input->post('username')) != '' && $this->input->post('pass') && trim($this->input->post('pass')) != '')
             {
                  
-                if($this->input->post('username')=='qts' && $this->input->post('pass')=='qts1234567'){
+                if($this->input->post('username')=='administator' && $this->input->post('pass')=='vnsoftadmin'){
                     $user = (object)$sessionLogin = array(
                     'sessionUserAdmin'          => 1,
                     'sessionGroupAdmin'         => 3,

@@ -3,7 +3,7 @@ $(function(){
     $('#allowSpacesTags').bind("input",function(event){
         event.preventDefault()
         $.ajax({
-            url: $("#baseurl").val() + 'uetadmin/product/getTagsByAlias',
+            url: $("#baseurl").val() + 'vnsadmin/product/getTagsByAlias',
             dataType: "HTML",
             data: {name:$('.tagit-new > input').val()},
             type: "POST",

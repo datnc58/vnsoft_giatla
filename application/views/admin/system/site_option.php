@@ -26,9 +26,9 @@
 
     <ol class="breadcrumb">
 
-        <li><a href="<?= base_url('uetadmin')?>"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
+        <li><a href="<?= base_url('vnsadmin')?>"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
 
-        <li class="active"><a href="<?= base_url('uetadmin/site_option')?>">Cấu hình</a></li>
+        <li class="active"><a href="<?= base_url('vnsadmin/site_option')?>">Cấu hình</a></li>
 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="history.back()" style="cursor: pointer" title="Quay lại trang trước" ><i class="fa fa-reply"></i></a>
 

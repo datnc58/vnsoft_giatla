@@ -396,7 +396,7 @@ class Admin extends MY_Controller
 
         $this->load->view('admin/system/site_option', $data);
 
-        $this->load->view('admin/footer');$this->_Route();
+        $this->load->view('admin/footer');
 
     }
 
@@ -1732,8 +1732,6 @@ class Admin extends MY_Controller
         $this->session->set_flashdata("mess", "Xóa config wiget thành công!");
 
         redirect(base_url().'vnsadmin/admin/setup_wiget');
-
-
 
     }
 

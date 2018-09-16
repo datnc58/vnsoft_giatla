@@ -70,7 +70,7 @@ class Home extends MY_Controller
         }
     }
 
-    public function index(){ //uh code ci3 k chay dc kieu kia cho nen phai viet lại @@ vẫn chạy đc mà â cac router khac nhu contact , uetadmin co chay dau
+    public function index(){ //uh code ci3 k chay dc kieu kia cho nen phai viet lại @@ vẫn chạy đc mà â cac router khac nhu contact , vnsadmin co chay dau
         $this->clear_all_cache();
         $data = array();
          /*begin controller home*//*end controller home*/

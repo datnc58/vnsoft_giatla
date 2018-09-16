@@ -292,7 +292,7 @@
 
             if (!$this->Zend_Acl->isAllowed($role,':' . $controller, $action)) {
 				$this->session->set_flashdata("mess", "Tài khoản của bạn chưa được cấp quyền sử dụng chức năng này!");
-                redirect(base_url('vnadmin'));
+                redirect(base_url('vnsadmin'));
                 die();
             }
         }
@@ -332,6 +332,7 @@
                redirect(base_url('404_override'));
             }
         }
+		/*
 
         public function _AdminFalse($api='')
         {
@@ -348,6 +349,6 @@
             }
             return true;
         }
-
+*/
     
     }

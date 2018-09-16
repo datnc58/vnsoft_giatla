@@ -92,6 +92,7 @@ class CI_Controller {
 	{
 		return self::$instance;
 	}
+	/*
 	public function _Route()
 	{
 	    $routes = $this->router->routes;
@@ -115,4 +116,5 @@ class CI_Controller {
 	    }
 	    return false;
 	}
+	*/
 }

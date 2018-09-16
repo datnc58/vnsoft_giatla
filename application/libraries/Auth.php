@@ -58,7 +58,7 @@ class Auth {
     }
     function check(){
         if (!$this->ci->session->userdata('adminid')){
-            redirect(base_url('uetadmin/login'));
+            redirect(base_url('vnsadmin/login'));
         }else{
             if(!isset($_SESSION['ck_access'])){
                 $_SESSION['ck_access']=true;

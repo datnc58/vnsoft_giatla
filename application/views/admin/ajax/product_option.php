@@ -58,7 +58,7 @@
                                 <input type="text" name="price_op[]" value="<?=$items->price?>" placeholder="Price" class="form-control">
                             </td>
                             <td>
-                                <a href="<?=base_url('uetadmin/product/del')?>/<?=$items->id ?>" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="Remove">
+                                <a href="<?=base_url('vnsadmin/product/del')?>/<?=$items->id ?>" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="Remove">
                                     <i class="fa fa-minus-circle"></i>
                                 </a>
                             </td>

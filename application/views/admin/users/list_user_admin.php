@@ -172,8 +172,8 @@
 							<td><input type="checkbox" name="" id="checkone" value="1"></td>
 							<td>0</td>
 							<td class="todo-list">Quản trị cấp cao</td>
-							<td>kythuatqts@gmail.com</td>
-							<td>0977160509</td>
+							<td>kythuatvnsoft@gmail.com</td>
+							<td>0963719570</td>
 							<td class="text-center">
 								<label class="view_color view_active" data-value="1" data-placement="" data-view="active">
 									<div class="toggle btn btn-primary btn-xs" data-toggle="toggle" style="width: 38px; height: 22px;"><input type="checkbox" checked="" data-toggle="toggle" id="toggle" data-size="mini" data-on="Yes" data-off="Yes"><div class="toggle-group"><label class="btn btn-primary btn-xs toggle-on">Yes</label><label class="btn btn-default btn-xs active toggle-off">No</label><span class="toggle-handle btn btn-default btn-xs"></span></div></div>

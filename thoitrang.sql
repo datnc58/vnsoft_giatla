@@ -1,17 +1,3 @@
-/*
-Navicat MySQL Data Transfer
-
-Source Server         : Mysql
-Source Server Version : 50505
-Source Host           : localhost:3306
-Source Database       : thoitrang
-
-Target Server Type    : MYSQL
-Target Server Version : 50505
-File Encoding         : 65001
-
-Date: 2018-09-16 09:29:22
-*/
 
 SET FOREIGN_KEY_CHECKS=0;
 
@@ -1965,7 +1951,7 @@ INSERT INTO `resources` VALUES ('96', '95', 'site_option', 'Cấu hình hệ th�
 INSERT INTO `resources` VALUES ('97', '0', 'report', 'Báo cáo-Thống kê', null, '19', '', '', '0');
 INSERT INTO `resources` VALUES ('98', '104', 'listProvince', 'Phí vận chuyển', null, '3', 'fa-truck', 'vnsadmin/order/listProvince', '1');
 INSERT INTO `resources` VALUES ('99', '90', 'categories', 'Danh mục share', null, '0', null, null, null);
-INSERT INTO `resources` VALUES ('100', '90', 'cat_add', 'Thêm danh mục share', null, '0', null, null, null);
+INSERT INTO `resources` VALUES ('100', '90', 'cat_add', 'sThêm danh mục share', null, '0', null, null, null);
 INSERT INTO `resources` VALUES ('101', '90', 'cat_edit', 'Sửa danh mục share', null, '0', null, null, null);
 INSERT INTO `resources` VALUES ('102', '90', 'delete_cat', 'Xóa danh mục share', null, '0', null, null, null);
 INSERT INTO `resources` VALUES ('103', '97', 'bestsellers', 'Hàng bán chạy', null, '2', 'fa-circle-o', 'vnsadmin/report/bestsellers', '0');
@@ -1973,7 +1959,7 @@ INSERT INTO `resources` VALUES ('104', '0', 'order', 'Quản lý giỏ hàng', n
 INSERT INTO `resources` VALUES ('105', '104', 'orders', 'Danh sách đặt hàng', null, '1', 'fa-cart-arrow-down', 'vnsadmin/order/orders', '1');
 INSERT INTO `resources` VALUES ('106', '104', 'listSale', 'Mã giảm giá', null, '2', 'fa-files-o', 'vnsadmin/order/listSale', '1');
 INSERT INTO `resources` VALUES ('107', '0', 'raovat', 'Quản lý rao vặt', null, '13', 'fa-bars', '', '1');
-INSERT INTO `resources` VALUES ('108', '0', 'inuser', 'Ý kiến khách hàng', null, '0', 'fa-user-plus', 'uetadmin/inuser/categories', '0');
+INSERT INTO `resources` VALUES ('108', '0', 'inuser', 'Ý kiến khách hàng', null, '0', 'fa-user-plus', 'vnsadmin/inuser/categories', '0');
 INSERT INTO `resources` VALUES ('109', '107', 'tagtinrao', 'Tags tin rao', null, '3', 'fa-tag', '', '0');
 INSERT INTO `resources` VALUES ('110', '0', 'email', 'Quản lý email', null, '14', ' fa-envelope-o ', 'vnsadmin/email/emails', '1');
 INSERT INTO `resources` VALUES ('111', '0', 'support', 'Hỗ trợ  trực tuyến', null, '15', 'fa-life-ring', 'vnsadmin/support/listSuport', '1');
@@ -2069,7 +2055,7 @@ INSERT INTO `site_log` VALUES ('3333', '1', '::1', '/Uet_website2/vnsadmin', '',
 INSERT INTO `site_log` VALUES ('3331', '1', '::1', '/Uet_website2/vnsadmin', '', 'defaults/index', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/72.4.208 Chrome/66.4.3359.208 Safari/537.36', '0', '2018-09-16 08:44:05', '0');
 INSERT INTO `site_log` VALUES ('3332', '1', '::1', '/Uet_website2/', '', 'home/index', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/72.4.208 Chrome/66.4.3359.208 Safari/537.36', '0', '2018-09-16 08:48:02', '0');
 INSERT INTO `site_log` VALUES ('3329', null, '::1', '/Uet_website2/', '', 'home/index', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/72.4.208 Chrome/66.4.3359.208 Safari/537.36', '0', '2018-09-16 08:36:37', '1');
-INSERT INTO `site_log` VALUES ('3330', '1', '::1', '/Uet_website2/uetadmin', '', 'defaults/index', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/72.4.208 Chrome/66.4.3359.208 Safari/537.36', '0', '2018-09-16 08:37:27', '0');
+INSERT INTO `site_log` VALUES ('3330', '1', '::1', '/Uet_website2/vnsadmin', '', 'defaults/index', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/72.4.208 Chrome/66.4.3359.208 Safari/537.36', '0', '2018-09-16 08:37:27', '0');
 INSERT INTO `site_log` VALUES ('3344', '1', '::1', '/Uet_website2/vnsadmin/logout/index', 'http://localhost/Uet_website2/vnsadmin', 'logout/index', 'ut/index', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/72.4.208 Chrome/66.4.3359.208 Safari/537.36', '0', '2018-09-16 09:28:38', '0');
 INSERT INTO `site_log` VALUES ('3345', '1', '::1', '/Uet_website2/vnsadmin', 'http://localhost/Uet_website2/vnsadmin', 'defaults/index', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/72.4.208 Chrome/66.4.3359.208 Safari/537.36', '0', '2018-09-16 09:28:38', '0');
 INSERT INTO `site_log` VALUES ('3343', '1', '::1', '/Uet_website2/vnsadmin', '', 'defaults/index', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/72.4.208 Chrome/66.4.3359.208 Safari/537.36', '0', '2018-09-16 09:23:32', '0');

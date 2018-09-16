@@ -188,7 +188,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                                         'password' => '',
 
-                                        'database' => 'thoitrang',
+                                        'database' => 'vnsoft_giatla',
 
                                         'dbdriver' => 'mysqli',
 

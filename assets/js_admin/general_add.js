@@ -111,7 +111,7 @@ function createItem()
 		$.ajax({
 			type: "POST",
 			dataType: "json",
-			url: base_url() + 'uetadmin/alias/checkAdd',
+			url: base_url() + 'vnsadmin/alias/checkAdd',
 			data: {alias:$('#alias').val()},
 			success:function(result){
 				if(result.check == true){
@@ -130,7 +130,7 @@ function editCatItem(){
 		$.ajax({
 			type: "POST",
 			dataType: "json",
-			url: base_url() + 'uetadmin/alias/checkCatEdit',
+			url: base_url() + 'vnsadmin/alias/checkCatEdit',
 			data: {id:$('#id_edit').val(),alias:$('#alias').val(),catcheck:$('#catcheck').val()},
 			success:function(result){
 				if(result.check == true){
@@ -151,7 +151,7 @@ function editItem(){
 		$.ajax({
 			type: "POST",
 			dataType: "json",
-			url: base_url() + 'uetadmin/alias/checkEdit',
+			url: base_url() + 'vnsadmin/alias/checkEdit',
 			data: {id:$('#id_edit').val(),alias:$('#alias').val(),catcheck:$('#catcheck').val()},
 			success:function(result){
 				if(result.check == true){

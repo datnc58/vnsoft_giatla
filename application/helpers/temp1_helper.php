@@ -328,9 +328,9 @@ function view_product_cate_table($data,$parent=0,$text='',$edit=null){
 
 
                 <td class='text-center'>
-                <a href='".base_url('uetadmin/product/cat_edit/' . $v->id)."'
+                <a href='".base_url('vnsadmin/product/cat_edit/' . $v->id)."'
                         class=\"btn btn-xs btn-default\" title=\"Sửa\"><i class=\"fa fa-pencil\"></i></a>
-                <a href='".base_url('uetadmin/product/deletecategory/' . $v->id)."'
+                <a href='".base_url('vnsadmin/product/deletecategory/' . $v->id)."'
                        onclick=\"return confirm('Bạn có chắc chắn muốn xóa?')\"
                        class=\"btn btn-xs btn-danger\"title=\"Xóa\" style=\"color: #fff\"><i class=\"fa fa-times\"></i> </a>
                     </td>
@@ -354,10 +354,10 @@ function view_product_hangsx_table($data,$parent=0,$text='',$edit=null){
                     <td>".$text.$v->sort.'. '.$v->name."</td>
                     <td>$img</td>
                     <td class=\"text-center\">
-                      <a href='".base_url('uetadmin/product_hangsx/Edit/' . $v->id)."'
+                      <a href='".base_url('vnsadmin/product_hangsx/Edit/' . $v->id)."'
                     class=\"btn btn-xs btn-default\" title=\"Sửa\"><i class=\"fa fa-pencil\"></i></a>
 
-                <a href='".base_url('uetadmin/product_hangsx/Delete/' . $v->id)."'
+                <a href='".base_url('vnsadmin/product_hangsx/Delete/' . $v->id)."'
                        onclick=\"return confirm('Bạn có chắc chắn muốn xóa?')\"
                        class=\"btn btn-xs btn-danger\"title=\"Xóa\" style=\"color: #fff\"><i class=\"fa fa-times\"></i> </a>
                     </td>
@@ -447,9 +447,9 @@ function view_news_cate_table($data,$parent=0,$text=''){
                     </td>
 
                 <td class='text-center'>
-                <a href='".base_url('uetadmin/news/cat_edit/' . $v->id)."'
+                <a href='".base_url('vnsadmin/news/cat_edit/' . $v->id)."'
                         class=\"btn btn-xs btn-default\" title=\"S?a\"><i class=\"fa fa-pencil\"></i></a>
-                <a href='".base_url('uetadmin/news/deletecategory/' . $v->id)."'
+                <a href='".base_url('vnsadmin/news/deletecategory/' . $v->id)."'
                        onclick=\"return confirm('Bạn có chắc chắn muốn xóa?')\"
                        class=\"btn btn-xs btn-danger\"title=\"Xóa\" style=\"color: #fff\"><i class=\"fa fa-times\"></i> </a>
                     </td>
@@ -599,10 +599,10 @@ function view_post_cate_table($data,$parent=0,$text='',$edit=null){
                     <td>".$text.$v->sort.'. '.$v->name."</td>
                     <td>$img</td>
                     <td class=\"text-center\">
-                      <a href='".base_url('uetadmin/raovat/cat_raovat_edit/' . $v->id)."'
+                      <a href='".base_url('vnsadmin/raovat/cat_raovat_edit/' . $v->id)."'
                     class=\"btn btn-xs btn-default\" title=\"Sửa\"><i class=\"fa fa-pencil\"></i></a>
 
-                <a href='".base_url('uetadmin/raovat/cat_raovat_delete/' . $v->id)."'
+                <a href='".base_url('vnsadmin/raovat/cat_raovat_delete/' . $v->id)."'
                        onclick=\"return confirm('Bạn có chắc chắn muốn xóa?')\"
                        class=\"btn btn-xs btn-danger\"title=\"Xóa\" style=\"color: #fff\"><i class=\"fa fa-times\"></i> </a>
                     </td>

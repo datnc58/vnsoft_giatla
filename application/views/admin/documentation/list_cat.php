@@ -12,8 +12,8 @@
         <small></small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="<?= base_url('uetadmin')?>"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
-        <li class="active"><a href="<?= base_url('uetadmin/admin/listDoc')?>">Danh sách hướng dẫn</a></li>
+        <li><a href="<?= base_url('vnsadmin')?>"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
+        <li class="active"><a href="<?= base_url('vnsadmin/admin/listDoc')?>">Danh sách hướng dẫn</a></li>
         <li > <a onclick="history.back()" style="cursor: pointer"><i class="fa fa-reply"></i></a></li>
     </ol>
 </section>
@@ -21,7 +21,7 @@
     <!-- Page Heading -->
     <div class="box">
         <div class="box-header">
-            <a href="<?= base_url('uetadmin/admin/cat_add_doc')?>" class="btn btn-success btn-sm">
+            <a href="<?= base_url('vnsadmin/admin/cat_add_doc')?>" class="btn btn-success btn-sm">
             <i class="fa fa-plus"></i> Thêm mới
             </a>
             <a onclick="ActionDelete('formbk')" class="btn btn-danger btn-sm">
@@ -30,7 +30,7 @@
         </div>
         <!-- /.box-header -->
         <div class="box-body">
-			<form name="formbk" method="post" action="<?=base_url('uetadmin/admin/deletes_categorydoc')?>">
+			<form name="formbk" method="post" action="<?=base_url('vnsadmin/admin/deletes_categorydoc')?>">
                 <table id="example" class="table table-bordered table-striped">
 					<thead>
                         <tr>

@@ -12,8 +12,8 @@
         <small></small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="<?= base_url('uetadmin')?>"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
-        <li class="active"><a href="<?= base_url('uetadmin/admin/listDoc')?>">Danh mục hướng dẫn</a></li>
+        <li><a href="<?= base_url('vnsadmin')?>"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
+        <li class="active"><a href="<?= base_url('vnsadmin/admin/listDoc')?>">Danh mục hướng dẫn</a></li>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="history.back()" style="cursor: pointer" title="Quay lại trang trước" ><i class="fa fa-reply"></i></a>
     </ol>
 </section>
