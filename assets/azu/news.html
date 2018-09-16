@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=n">
+    <title>Azu kết nối không giới hạn</title>
+
+    <link rel="icon" href="http://qts.vn/images/icon/x_icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/resetDefalt.css"/>
+    <link rel="stylesheet" href="css/setmedia.css"/>
+    <link rel="stylesheet" href="css/nav-menu.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+
+    <!--Slider -->
+    <link href="css/plug.css" rel="stylesheet" media="all">
+
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/nav-menu.js" type="text/javascript"></script>
+    <script src="js/site-main.js" type="text/javascript"></script>
+
+</head>
+<body>
+<!-- Header-->
+<header>
+    <section class="header-top hidden-xs clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-5 hidden-xs ">
+                    <p class="addresses_top"><i class="fa fa-map-marker" aria-hidden="true"></i>Số 52, Lê Quang Đạo, Từ
+                        Liêm, Hà Nội</p>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-7 hidden-xs">
+                    <div class="thongtincanhan hidden">
+                        <div class="dropdown ">
+                            <a id="dLabel" class=" f14b_525151 hover_co_ef7d00" style=" cursor: pointer;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Nguyễn Văn Toản
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu user_dropdown pull-right" role="menu" aria-labelledby="dLabel">
+
+                                <li>
+                                    <a href="" title="">Thông tin cá nhân</a>
+                                </li>
+                                <li>
+                                    <a href="" title="">Đổi mật khẩu</a>
+                                </li>
+                                <li>
+                                    <a href="" title="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="list-inline pull-right">
+                        <li><a href="" title=""><i class="fa fa-question-circle" aria-hidden="true"></i>Hỗ trợ</a></li>
+                        <li><a href="" title=""><img src="img/icon_add_acout.png" alt=""/> Đăng ký</a></li>
+                        <li><a href="" title=""><img src="img/icon_login.png" alt=""/> Đăng nhập</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="header-center clearfix hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
+                    <a href="index.html" title="Logo">
+                        <img class="img-responsive" src="img/azu.png" alt="Logo"/>
+                    </a>
+                </div>
+                <div class="col-md-8 col-lg-6 col-sm-7 col-xs-8">
+                    <form action="" method="get" class="form-search">
+                        <div class="input-group" style="position: relative; z-index: 99">
+                            <div class="input-group-btn search-panel ">
+                                <button type="button" class="btn btn-md btn-default dropdown-toggle"
+                                        data-toggle="dropdown">
+                                    <span id="search_concept">Tất cả</span> <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="">
+                                            <option value="hang-dien-tu">Hàng điện tử</option>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <option value="hang-tieu-dung">Hàng tiêu dùng</option>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <input type="text" class="input-md form-control" name="s"
+                                   placeholder="Tìm kiếm website bạn mong muốn...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-md btn-default search_top" type="submit">
+                                        Tìm kiếm
+                                    </button>
+                                </span>
+                        </div>
+                    </form>
+                    <div class="bottom-search">
+                        <ul class="list-inline">
+                            <li><a href="" title="">nhà hàng </a></li>
+                            <li><a href="" title="">bất động sản</a></li>
+                            <li><a href="" title="">du lịch </a></li>
+                            <li><a href="" title="">thương mại điện tử </a></li>
+                            <li><a href="" title="">giáo dục đào tạo</a></li>
+                            <li><a href="" title="">truyền thông quảng cáo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-1 col-sm-2 visible-sm clearfix login_sm">
+                    <ul>
+                        <li><a href="" title=""><i class="fa fa-question-circle" aria-hidden="true"></i>Hỗ trợ</a></li>
+                        <li><a href="" title=""><i class="fa fa-user-plus" aria-hidden="true"></i>Đăng ký</a></li>
+                        <li><a href="" title=""><i class="fa fa-user" aria-hidden="true"></i>Đăng nhập</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="header-bottom clearfix">
+        <div class="container">
+            <div class="visible-xs menu_mb">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <button class="nav-toggle">
+                            <div class="icon-menu">
+                                <span class="line line-1"></span>
+                                <span class="line line-2"></span>
+                                <span class="line line-3"></span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-xs-7">
+                        <div class="logo_mb">
+                            <a href="index.html" title="Logo">
+                                <img class="" src="img/azu.png" alt="Logo"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="thongtincanhan hidden">
+                            <div class="dropdown ">
+                                <a id="dLabel" class=" f14b_525151 hover_co_ef7d00" style=" cursor: pointer;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Nguyễn Văn Toản
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu user_dropdown pull-right" role="menu" aria-labelledby="dLabel">
+
+                                    <li>
+                                        <a href="" title="">Thông tin cá nhân</a>
+                                    </li>
+                                    <li>
+                                        <a href="" title="">Đổi mật khẩu</a>
+                                    </li>
+                                    <li>
+                                        <a href="" title="">Đăng xuất</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="login_xs pull-right">
+                            <ul class="list-inline ">
+                                <li><a href="" title=""><i class="fa fa-user-plus" aria-hidden="true"></i>Đăng ký</a>
+                                </li>
+                                <li><a href="" title=""><i class="fa fa-user" aria-hidden="true"></i>Đăng nhập</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /menu_mb -->
+            <div class="row">
+                <div class="menu_main">
+                    <nav class="nav is-fixed" role="navigation">
+                        <div class="wrapper wrapper-flush">
+                            <div class="nav-container container">
+                                <div class="row_pc">
+                                    <ul class="nav-menu menu">
+                                        <li class="menu-item visible-xs ">
+                                            <ul class="list-inline login_xs_1">
+                                                <li class=""><a href="">Đăng Ký</a></li>
+                                                <li class=""><a href="">|</a></li>
+                                                <li class=""><a href="">Đăng Nhập</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item" >
+                                            <a href="index.html" class="menu-link">Phần mềm QTS.VN</a>
+                                        </li>
+                                        <li class="menu-item new-hot">
+                                            <a href="products.html" class="menu-link">Website trọn gói mẫu -
+                                                Santhuonghieu.vn</a>
+                                        </li>
+
+                                        <li class="menu-item has-dropdown new-hot">
+                                            <a href="products_detail.html" class="menu-link ">Bảng giá Host</a>
+                                            <ul class="nav-dropdown menu">
+                                                <li class="menu-item">
+                                                    <a href="#" class="menu-link">Bảng giá Tên miền </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="#" class="menu-link">Hướng dẫn sử dụng Website</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="" title="" class="menu-link">Chính sách đại lý</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item new-hot"><a href="news.html" class="menu-link">Bảng giá Tên
+                                            miền</a></li>
+                                        <li class="menu-item"><a href="products.html" class="menu-link">Hướng dẫn sử
+                                            dụng Website</a></li>
+                                        <li class="menu-item"><a href="news_detail.html" class="menu-link">Chính sách đại lý</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</header>
+<!-- End Header-->
+<!-- Main -->
+<article>
+<div class="container visible-xs search-xs">
+    <div class="col-xs-12">
+        <form action="" method="get" class="form-search">
+            <div class="input-group" style="position: relative; z-index: 9">
+                <div class="input-group-btn search-panel ">
+                    <button type="button" class="btn btn-md btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span id="search_concept">Tất cả</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="">
+                                <option value="hang-dien-tu">Hàng tiêu dùng</option>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <option value="hang-tieu-dung">Hàng tiêu dùng</option>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <input type="text" class="input-md form-control" name="s"
+                       placeholder="Tìm kiếm website ban mong muốn...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-md btn-default search_top" type="submit">
+                                        Tìm Kiếm
+                                    </button>
+                                </span>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="container">
+<div class="row_pc visible-xs visible-sm">
+    <div class="products-category">
+        <a>Thiết kế website chuyện nghiệp</a>
+    </div>
+    <ul class="list-category">
+        <li class="clearfix">
+            <h2>
+                <a href="" class="" title="">
+                    <img class="pull-left img-responsive" src="img/icon_hotel.png" alt="">
+                    <span class="pull-left ">Du lịch - Khách sạn</span>
+                </a>
+            </h2>
+        </li>
+        <li class="clearfix">
+            <h2>
+                <a href="" class="" title="">
+                    <img class="pull-left img-responsive" src="img/icon_noithat.png" alt="">
+                    <span class="pull-left ">Nội thất kiến trúc</span>
+                </a>
+            </h2>
+        </li>
+        <li class="clearfix">
+            <h2>
+                <a href="" class="" title="">
+                    <img class="pull-left img-responsive" src="img/icon_book.png" alt="">
+                    <span class="pull-left ">Giáo dục đào tạo</span>
+                </a>
+            </h2>
+        </li>
+        <li class="clearfix">
+            <h2>
+                <a href="" class="" title="">
+                    <img class="pull-left img-responsive" src="img/icon_xaydung.png" alt="">
+                    <span class="pull-left ">Xây dựng bất động sản</span>
+                </a>
+            </h2>
+        </li>
+        <li class="clearfix">
+            <h2>
+                <a href="" class="" title="">
+                    <img class="pull-left img-responsive" src="img/icon_car.png" alt="">
+                    <span class="pull-left ">Ô tô, xe máy, xe đạp</span>
+                </a>
+            </h2>
+        </li>
+        <li class="clearfix">
+            <h2>
+                <a href="" class="" title="">
+                    <img class="pull-left img-responsive" src="img/icon_tochuc.png" alt="">
+                    <span class="pull-left ">Nhà nước tổ chức</span>
+                </a>
+            </h2>
+        </li>
+        <li class="clearfix">
+            <h2>
+                <a href="" class="" title="">
+                    <img class="pull-left img-responsive" src="img/icon_chuyenthong.png" alt="">
+                    <span class="pull-left ">Truyền thông quảng cáo</span>
+                </a>
+            </h2>
+        </li>
+        <li class="clearfix">
+            <h2>
+                <a href="" class="" title="">
+                    <img class="pull-left img-responsive" src="img/icon_mypham.png" alt="">
+                    <span class="pull-left ">Làm đẹp, sức khỏe</span>
+                </a>
+            </h2>
+        </li>
+        <li class="clearfix">
+            <h2>
+                <a href="" class="" title="">
+                    <img class="pull-left img-responsive" src="img/icon_anninh.png" alt="">
+                    <span class="pull-left ">An ninh bảo vệ</span>
+                </a>
+            </h2>
+        </li>
+        <li class="clearfix">
+            <h2>
+                <a href="" class="" title="">
+                    <img class="pull-left img-responsive" src="img/icon_amthuc.png" alt="">
+                    <span class="pull-left ">Thực phẩm</span>
+                </a>
+            </h2>
+        </li>
+        <li class="clearfix">
+            <h2>
+                <a href="" class="" title="">
+                    <img class="pull-left img-responsive" src="img/icon_khac.png" alt="">
+                    <span class="pull-left ">Lĩnh vực khác</span>
+                </a>
+            </h2>
+        </li>
+        <li class="clearfix">
+            <h2>
+                <a href="" class="" title="">
+                    <img class="pull-left img-responsive" src="img/icon_congnghe.png" alt="">
+                    <span class="pull-left ">Thiết bị công nghệ</span>
+                </a>
+            </h2>
+        </li>
+        <li class="clearfix">
+            <h2>
+                <a href="" class="" title="">
+                    <img class="pull-left img-responsive" src="img/icon_web_demo1.png" alt="">
+                    <span class="pull-left ">Thiết kế website demo 1</span>
+                </a>
+            </h2>
+        </li>
+        <li class="clearfix">
+            <h2>
+                <a href="" class="" title="">
+                    <img class="pull-left img-responsive" src="img/icon_web_demo2.png" alt="">
+                    <span class="pull-left ">Thiết kế website demo 2</span>
+                </a>
+            </h2>
+        </li>
+        <li class="clearfix">
+            <h2>
+                <a href="" class="" title="">
+                    <img class="pull-left img-responsive" src="img/icon_web_demo3.png" alt="">
+                    <span class="pull-left ">Thiết kế website demo 3</span>
+                </a>
+            </h2>
+        </li>
+    </ul>
+</div>
+<div class="row">
+<section class="container-top clearfix">
+    <div class="col-lg-2 col-md-3 hidden-sm hidden-xs">
+        <div class="row_pc box_products_category">
+            <div class="title_products_category">
+                Thiết kế website chuyện nghiệp
+            </div>
+            <ul class="drow_menu_item clearfix">
+                <li class="box_item_left">
+                    <h2><a href="" title=""> <img src="img/icon_hotel.png" alt=""/>Du lịch - Khách sạn</a></h2>
+                    <ul class="item_menu_left">
+                        <li><a href="">Du lịch - Khách sạn</a></li>
+                        <li><a href="">Du lịch - Khách sạn</a></li>
+                        <li><a href="">Du lịch - Khách sạn</a></li>
+                    </ul>
+                </li>
+                <li><h2><a href="" title=""> <img src="img/icon_noithat.png" alt=""/>Nội thất kiến trúc</a></h2></li>
+                <li><h2><a href="" title=""> <img src="img/icon_book.png" alt=""/>Giáo dục đào tạo</a></h2></li>
+                <li><h2><a href="" title=""> <img src="img/icon_xaydung.png" alt=""/>Xây dựng bất động sản</a></h2></li>
+                <li><h2><a href="" title=""> <img src="img/icon_car.png" alt=""/>Ô tô, xe máy, xe đạp</a></h2></li>
+                <li><h2><a href="" title=""> <img src="img/icon_tochuc.png" alt=""/>Nhà nước tổ chức</a></h2></li>
+                <li><h2><a href="" title=""> <img src="img/icon_chuyenthong.png" alt=""/>Làm đẹp, sức khỏe</a></h2></li>
+                <li><h2><a href="" title=""> <img src="img/icon_mypham.png" alt=""/>An ninh bảo vệ</a></h2></li>
+                <li><h2><a href="" title=""> <img src="img/icon_amthuc.png" alt=""/>Thực phẩm</a></h2></li>
+                <li><h2><a href="" title=""> <img src="img/icon_khac.png" alt=""/>Lĩnh vực khác</a></h2></li>
+                <li><h2><a href="" title=""> <img src="img/icon_congnghe.png" alt=""/>Thiết bị công nghệ</a></h2></li>
+                <li><h2><a href="" title=""> <img src="img/icon_web_demo1.png" alt=""/>Thiết kế website demo 1</a></h2>
+                </li>
+                <li><h2><a href="" title=""> <img src="img/icon_web_demo2.png" alt=""/>Thiết kế website demo 2</a></h2>
+                </li>
+                <li>
+                    <h2><a href="" title=""> <img src="img/icon_web_demo3.png" alt=""/>Thiết kế website demo 3</a></h2>
+                    <ul class="item_menu_left">
+                        <li><a href="">Du lịch - Khách sạn</a></li>
+                        <li><a href="">Du lịch - Khách sạn</a></li>
+                        <li><a href="">Du lịch - Khách sạn</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Slider -->
+    <div class="col-lg-8 col-md-9 col-sm-12 col-xs-12">
+        <div class="">
+            <div id="fw_al_002" class="carousel slide swipe_x ps_easeInOutSine" data-ride="carousel" data-pause="hover"
+                 data-interval="5000" data-duration="2000">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <a href="" title=""><img src="img/slider-1.png" alt="fw_al_002_01"/></a>
+
+                    </div>
+                    <div class="item ">
+                        <a href="" title=""><img src="img/slider-1.png" alt="fw_al_002_01"/></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row img_bottom row_5_xs">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pdd-5-xs">
+                <div class="img_cate_bottom">
+                    <a href="" title=""><img class="w_100" src="img/img_bottom1.png" alt=""/></a>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pdd-5-xs">
+                <div class="img_cate_bottom">
+                    <a href="" title=""><img class="w_100" src="img/img_bottom2.png" alt=""/></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 pdd-5-xs">
+                <div class="img_cate_bottom">
+                    <a href="" title=""><img class="w_100" src="img/img_bottom3.png" alt=""/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End slider -->
+    <div class="col-lg-2 hidden-md hidden-sm hidden-xs">
+        <div class="box_right">
+            <div class="hotline">
+                Hotline
+            </div>
+            <div class="row_pc">
+                <div class=" clearfix">
+                    <div class="img">
+                        <a href="" title="">
+                            <img class="img-responsive" src="img/img_hotline.png" alt="">
+                        </a>
+                    </div>
+                    <div class="img">
+                        <a href="" title="">
+                            <img class="img-responsive" src="img/img_right1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="img">
+                        <a href="" title="">
+                            <img class="img-responsive" src="img/img_right2.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="img">
+                        <a href="" title="">
+                            <img class="img-responsive" src="img/img_right3.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Sales criteria -->
+</section>
+<div class="clearfix-20"></div>
+<div class="page_title row-15">
+    <h1 class="text-center">News</h1>
+</div>
+<div class="clearfix-20"></div>
+<div class="row_pc">
+<div class="col-lg-10  col-md-10 col-sm-12 col-xs-12">
+    <div class="cate_home_1">
+            <ul class="breadcrumb">
+                <li><a href="#">Trang chủ</a></li>
+                <li class="active">news</li>
+            </ul>
+            <div class="list_p list_news clearfix">
+                <div class="item_news clearfix">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 ">
+                        <a href="" title=""><img class="w_100" src="img/prd_demo_new.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
+                        <div class="box_item_news">
+                            <h4><a href="">Thời đại phát triển của website và những công nghệ web mới nhất.</a></h4>
+                            <div class="date">Ngày đăng tin: 20.07.2016</div>
+                            <p class="dcs_item_news">Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                            </p>
+                            <div class="read_mo">
+                                <a href="" title="">Xem thêm <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_news clearfix">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 ">
+                        <a href="" title=""><img class="w_100" src="img/prd_demo_new.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
+                        <div class="box_item_news">
+                            <h4><a href="">Thời đại phát triển của website và những công nghệ web mới nhất.</a></h4>
+                            <div class="date">Ngày đăng tin: 20.07.2016</div>
+                            <p class="dcs_item_news">Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                            </p>
+                            <div class="read_mo">
+                                <a href="" title="">Xem thêm <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_news clearfix">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 ">
+                        <a href="" title=""><img class="w_100" src="img/prd_demo_new.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
+                        <div class="box_item_news">
+                            <h4><a href="">Thời đại phát triển của website và những công nghệ web mới nhất.</a></h4>
+                            <div class="date">Ngày đăng tin: 20.07.2016</div>
+                            <p class="dcs_item_news">Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                            </p>
+                            <div class="read_mo">
+                                <a href="" title="">Xem thêm <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_news clearfix">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 ">
+                        <a href="" title=""><img class="w_100" src="img/prd_demo_new.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
+                        <div class="box_item_news">
+                            <h4><a href="">Thời đại phát triển của website và những công nghệ web mới nhất.</a></h4>
+                            <div class="date">Ngày đăng tin: 20.07.2016</div>
+                            <p class="dcs_item_news">Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                            </p>
+                            <div class="read_mo">
+                                <a href="" title="">Xem thêm <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_news clearfix">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 ">
+                        <a href="" title=""><img class="w_100" src="img/prd_demo_new.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
+                        <div class="box_item_news">
+                            <h4><a href="">Thời đại phát triển của website và những công nghệ web mới nhất.</a></h4>
+                            <div class="date">Ngày đăng tin: 20.07.2016</div>
+                            <p class="dcs_item_news">Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                            </p>
+                            <div class="read_mo">
+                                <a href="" title="">Xem thêm <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_news clearfix">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 ">
+                        <a href="" title=""><img class="w_100" src="img/prd_demo_new.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
+                        <div class="box_item_news">
+                            <h4><a href="">Thời đại phát triển của website và những công nghệ web mới nhất.</a></h4>
+                            <div class="date">Ngày đăng tin: 20.07.2016</div>
+                            <p class="dcs_item_news">Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                            </p>
+                            <div class="read_mo">
+                                <a href="" title="">Xem thêm <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_news clearfix">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 ">
+                        <a href="" title=""><img class="w_100" src="img/prd_demo_new.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
+                        <div class="box_item_news">
+                            <h4><a href="">Thời đại phát triển của website và những công nghệ web mới nhất.</a></h4>
+                            <div class="date">Ngày đăng tin: 20.07.2016</div>
+                            <p class="dcs_item_news">Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                            </p>
+                            <div class="read_mo">
+                                <a href="" title="">Xem thêm <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_news clearfix">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 ">
+                        <a href="" title=""><img class="w_100" src="img/prd_demo_new.png" alt=""></a>
+                    </div>
+                    <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
+                        <div class="box_item_news">
+                            <h4><a href="">Thời đại phát triển của website và những công nghệ web mới nhất.</a></h4>
+                            <div class="date">Ngày đăng tin: 20.07.2016</div>
+                            <p class="dcs_item_news">Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                                Thời đại phát triển của website và những công nghệ web mới nhất.
+                            </p>
+                            <div class="read_mo">
+                                <a href="" title="">Xem thêm <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+    <!--end cate_home_1-->
+</div>
+<!-- end cate home-->
+<div class="col-lg-2  col-md-2 col-sm-12 col-xs-12">
+    <div class="new_left">
+        <div class="tit_new_left">
+            <h3>tin tức sự kiện</h3>
+        </div>
+        <div class="content_news_left clearfix">
+            <div class="new_item_left">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <a href="" title=""><img class="img-responsive" src="img/icon_news.png" alt=""/></a>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                    <a href="" title="">
+                        Thời đại phát triển của website và những công nghệ web mới nhất.
+                    </a>
+                </div>
+            </div>
+            <div class="new_item_left">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <a href="" title=""><img class="img-responsive" src="img/icon_news.png" alt=""/></a>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                    <a href="" title="">
+                        Thời đại phát triển của website và những công nghệ web mới nhất.
+                    </a>
+                </div>
+            </div>
+            <div class="new_item_left">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <a href="" title=""><img class="img-responsive" src="img/icon_news.png" alt=""/></a>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                    <a href="" title="">
+                        Thời đại phát triển của website và những công nghệ web mới nhất.
+                    </a>
+                </div>
+            </div>
+            <div class="new_item_left">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <a href="" title=""><img class="img-responsive" src="img/icon_news.png" alt=""/></a>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                    <a href="" title="">
+                        Thời đại phát triển của website và những công nghệ web mới nhất.
+                    </a>
+                </div>
+            </div>
+            <div class="new_item_left">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <a href="" title=""><img class="img-responsive" src="img/icon_news.png" alt=""/></a>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                    <a href="" title="">
+                        Thời đại phát triển của website và những công nghệ web mới nhất.
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix-20"></div>
+    <div class="question">
+        <div class="tit_new_left">
+            <h3>câu hỏi thường gặp</h3>
+        </div>
+        <div class="content_news_left clearfix">
+            <div class="new_item_left">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <p>1</p>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                    <a href="" title="">
+                        Thời đại phát triển của website và những công nghệ web mới nhất.
+                    </a>
+                </div>
+            </div>
+            <div class="new_item_left">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <p>1</p>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                    <a href="" title="">
+                        Thời đại phát triển của website và những công nghệ web mới nhất.
+                    </a>
+                </div>
+            </div>
+            <div class="new_item_left">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <p>1</p>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                    <a href="" title="">
+                        Thời đại phát triển của website và những công nghệ web mới nhất.
+                    </a>
+                </div>
+            </div>
+            <div class="new_item_left">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <p>1</p>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                    <a href="" title="">
+                        Thời đại phát triển của website và những công nghệ web mới nhất.
+                    </a>
+                </div>
+            </div>
+            <div class="new_item_left">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <p>1</p>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                    <a href="" title="">
+                        Thời đại phát triển của website và những công nghệ web mới nhất.
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix-20"></div>
+    <div class="box_qc_left">
+        <div class="qc_left">
+            <a href="" title=""><img class="w_100" src="img/quang_co.png" alt=""/></a>
+        </div>
+        <div class="clearfix-20"></div>
+        <div class="qc_left">
+            <a href="" title=""><img class="w_100" src="img/quang_c2.png" alt=""/></a>
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+</article>
+<!-- End Main -->
+
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-8 col-sm-8 col-xs-12">
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="menu_btt">
+                        <ul>
+                            <li>
+                                <a href="" title=""><i class="fa fa-circle" aria-hidden="true"></i>Du lịch - Khách
+                                    sạn</a>
+                            </li>
+                            <li><a href="" title=""><i class="fa fa-circle" aria-hidden="true"></i>Nội thất kiến
+                                trúc</a></li>
+                            <li><a href="" title=""><i class="fa fa-circle" aria-hidden="true"></i>Giáo dục đào tạo</a>
+                            </li>
+                            <li><a href="" title=""><i class="fa fa-circle" aria-hidden="true"></i>Xây dựng bất động sản</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="menu_btt">
+                        <ul>
+                            <li><a href="" title=""><i class="fa fa-circle" aria-hidden="true"></i>Du lịch - Khách
+                                sạn</a></li>
+                            <li><a href="" title=""><i class="fa fa-circle" aria-hidden="true"></i>Nội thất kiến
+                                trúc</a></li>
+                            <li><a href="" title=""><i class="fa fa-circle" aria-hidden="true"></i>Giáo dục đào tạo</a>
+                            </li>
+                            <li><a href="" title=""><i class="fa fa-circle" aria-hidden="true"></i>Xây dựng bất động sản</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="menu_btt">
+                        <ul>
+                            <li><a href="" title=""><i class="fa fa-circle" aria-hidden="true"></i>Du lịch - Khách
+                                sạn</a></li>
+                            <li><a href="" title=""><i class="fa fa-circle" aria-hidden="true"></i>Nội thất kiến
+                                trúc</a></li>
+                            <li><a href="" title=""><i class="fa fa-circle" aria-hidden="true"></i>Giáo dục đào tạo</a>
+                            </li>
+                            <li><a href="" title=""><i class="fa fa-circle" aria-hidden="true"></i>Xây dựng bất động sản</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="menu_btt">
+                        <ul>
+                            <li><a href="" title=""><i class="fa fa-circle" aria-hidden="true"></i>Du lịch - Khách
+                                sạn</a></li>
+                            <li><a href="" title=""><i class="fa fa-circle" aria-hidden="true"></i>Nội thất kiến
+                                trúc</a></li>
+                            <li><a href="" title=""><i class="fa fa-circle" aria-hidden="true"></i>Giáo dục đào tạo</a>
+                            </li>
+                            <li><a href="" title=""><i class="fa fa-circle" aria-hidden="true"></i>Xây dựng bất động sản</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="box_mail_bottom col-md-10 col-md-offset-2">
+                    <p>Đăng ký nhận tin tức & khuyến mại</p>
+
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder=" Email của bạn">
+                        <button type="button" class="btn btn-primary btn-block">Đăng ký nhận tin</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="box_copyright">
+                    <a href="" title=""><img src="img/logo_bttom.png" alt=""/></a>
+
+                    <div class="list_box_copyright">
+                        <ul>
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i>52 Lê Quang Đạo, Từ Liêm, Hà Nội</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i>0987.654.321</li>
+                            <li><i class="fa fa-envelope-o" aria-hidden="true"></i>info@qts.vn</li>
+                        </ul>
+                    </div>
+                    <div class="box_mxh">
+                        <ul class="list-inline">
+                            <li><a href="" title=""><img src="img/fb.png" alt=""/></a></li>
+                            <li><a href="" title=""><img src="img/tw.png" alt=""/></a></li>
+                            <li><a href="" title=""><img src="img/gpl.png" alt=""/></a></li>
+                            <li><a href="" title=""><img src="img/rss.png" alt=""/></a></li>
+                            <li><a href="" title=""><img src="img/p.png" alt=""/></a></li>
+                            <li><a href="" title=""><img src="img/in.png" alt=""/></a></li>
+                            <li class="hidden-xs"><a href="" title=""><img src="img/yt.png" alt=""/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-5 col-xs-12">
+                <div class="box_tt_cty">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <ul class="tt_cty">
+                            <li>Thông tin công ty</li>
+                            <li><a href="" title="">Giới thiệu về Công Ty QTS</a></li>
+                            <li><a href="" title="">Bảng giá</a></li>
+                            <li><a href="" title="">Trợ giúp</a></li>
+                            <li><a href="" title="">Công ty thiết kế website</a></li>
+                            <li><a href="" title="">Quy định sử dụng</a></li>
+                            <li><a href="" title="">Chính sách bảo mật</a></li>
+                            <li><a href="" title="">Kho giao diện</a></li>
+                            <li><a href="" title="">Website tham khảo</a></li>
+                            <li><a href="" title="">Dịch vụ thiết kế website</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <ul class="tt_cty">
+                            <li>dịch vụ</li>
+                            <li><a href="" title="">Đăng ký tên miền</a></li>
+                            <li><a href="" title="">Tên miền miễn phí</a></li>
+                            <li><a href="" title="">Dịch vụ Email</a></li>
+                            <li><a href="" title="">Thiết kế đồ họa</a></li>
+                            <li><a href="" title="">Thiết kế website doanh nghiệp</a></li>
+                            <li><a href="" title="">Quảng cáo Google Adwords</a></li>
+                            <li><a href="" title="">Phần mềm quản lý bán hàng</a></li>
+                            <li><a href="" title="">Tư vấn thiết kế website</a></li>
+                            <li><a href="" title="">Website tham khảo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="box_video">
+                    <iframe class="w_100" width="auto" height="215" src="https://www.youtube.com/embed/wm5QRJ4aIhQ"
+                            frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright_bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                Thiết kế bởi: <a href="" title="">qts.vn</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Footer -->
+
+</body>
+</html>
+
