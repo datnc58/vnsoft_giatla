@@ -33,24 +33,22 @@
     <meta name="twitter:title" content="<?= isset($seo['title']) && $seo['title'] != '' ? $seo['title'] : @$this->option->site_name; ?>"/>
     <meta name="twitter:description" content="<?= isset($seo['description']) && $seo['description'] != '' ? $seo['description'] : @$this->option->site_description; ?>"/>
     <meta name="twitter:image" content="<?= isset($seo['image']) && $seo['image'] != '' ? base_url($seo['image']) : base_url(@$this->option->site_logo); ?>"/>
-
-
-    <link rel="stylesheet" href="<?=base_url()?>assets/css/front_end/bootstrap.min.css"/>
-    <link rel="stylesheet" href="<?=base_url()?>assets/css/front_end/font-awesome.min.css"/>
-    <link rel="stylesheet" href="<?=base_url()?>assets/css/front_end/resetDefalt.css"/>
-    <link rel="stylesheet" href="<?=base_url()?>assets/css/front_end/setmedia.css"/>
-    <link rel="stylesheet" href="<?=base_url()?>assets/css/front_end/nav-menu.css"/>
-    <link rel="stylesheet" href="<?=base_url()?>assets/css/front_end/style.css"/>
-    <link rel="stylesheet" href="<?=base_url()?>assets/css/front_end/slider_main.css"/>
-    <link rel="stylesheet" href="<?=base_url()?>assets/css/front_end/owl.carousel2.css"/>
-    <link rel="stylesheet" href="<?=base_url()?>assets/css/front_end/owl.theme2.css"/>
-
-    <!--Slider -->
-
-    <script src="<?=base_url()?>assets/js/front_end/jquery-1.11.1.min.js" type="text/javascript"></script>
-    <script src="<?=base_url()?>assets/js/front_end/bootstrap.min.js" type="text/javascript"></script>
-    <script src="<?=base_url()?>assets/js/front_end/nav-menu.js" type="text/javascript"></script>
-    <script src="<?=base_url()?>assets/js/front_end/site-main.js" type="text/javascript"></script>
+	
+	<link href="<?=base_url()?>assets/css/front_end/bootstrap.min.css" rel="stylesheet"/>
+    <link href="<?=base_url()?>assets/css/front_end/font-awesome.css" rel="stylesheet"/>
+    <link href="<?=base_url()?>assets/css/front_end/owl.carousel.min.css"rel="stylesheet">
+    <link href="<?=base_url()?>assets/css/front_end/owl.theme.default.min.css"rel="stylesheet">
+    <link href="<?=base_url()?>assets/css/front_end/menu-2.css" rel="stylesheet"/>
+    <link href="<?=base_url()?>assets/css/front_end/search.css" rel="stylesheet"/>
+    <link href="<?=base_url()?>assets/css/front_end/style00.css" rel="stylesheet"/>
+    <link href="<?=base_url()?>assets/css/front_end/setmedia.css" rel="stylesheet"/>
+	
+	<script type="text/javascript" src="<?=base_url()?>assets/js/front_end/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="<?=base_url()?>assets/js/front_end/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<?=base_url()?>assets/js/front_end/owl.carousel.js"></script>
+    <script type="text/javascript" src="<?=base_url()?>assets/js/front_end/menu-2.js"></script>
+    <script type="text/javascript" src="<?=base_url()?>assets/js/front_end/style-img.js"></script>
+	
     <input type="hidden" value="<?= base_url()?>" id="base_url" name="">
 </head>
 <div id="fb-root"></div>
@@ -67,176 +65,70 @@
 
 <body>
 <!-- Header-->
-<header>
-<section class="header-top hidden-xs clearfix">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-5 col-md-5 col-sm-5 hidden-xs ">
-                <p class="addresses_top"><i class="fa fa-map-marker" aria-hidden="true"></i><?=@$this->option->address;?></p>
-            </div>
-            <div class="col-lg-7 col-md-7 col-sm-7 hidden-xs">
-                <div class="thongtincanhan hidden">
-                    <div class="dropdown ">
-                        <a id="dLabel" class=" f14b_525151 hover_co_ef7d00" style=" cursor: pointer;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu user_dropdown pull-right" role="menu" aria-labelledby="dLabel">
+<header id="header">
 
-                            <li>
-                                <a href="<?=base_url()?>" title="vnsoft.net - thông tin cá nhân">Thông tin cá nhân</a>
-                            </li>
-                            <li>
-                                <a href="<?=base_url()?>" title="vnsoft.net - đổi mật khẩu">Đổi mật khẩu</a>
-                            </li>
-                            <li>
-                                <a href="<?=base_url()?>" title="vnsoft.net - đăng xuất">Đăng xuất</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <ul class="list-inline pull-right">
-                    <li><a href="<?=base_url('ho-tro').'.html'?>" title=""><i class="fa fa-question-circle" aria-hidden="true"></i>Hỗ trợ</a></li>
-                    <li><a href="<?=base_url()?>" title="đăng ký - vnsoft.net"><img src="<?=base_url()?>assets/css/front_end/img/icon_add_acout.png" alt=""/> Đăng ký</a></li>
-                    <li><a href="<?=base_url()?>" title="đăng nhập - vnsoft.net"><img src="<?=base_url()?>assets/css/front_end/img/icon_login.png" alt=""/> Đăng nhập</a></li>
-                </ul>
+    <div class="menu_mb butt_mobile visible-xs visible-sm clearfix">
+        <button class="nav-toggle">
+            <div class="icon-menu">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
             </div>
+        </button>
+        <div class="text-center">
+            <img class="img_logo_mb" src="img/logo.png" alt=""/>
         </div>
-    </div>
-</section>
-<section class="header-center clearfix hidden-xs">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2 col-lg-3 col-sm-3 col-xs-3">
-                <a href="<?=base_url()?>" title="vnsoft.net - Thiết kế website chuyên nghiệp">
-                    <img class="img-responsive" src="<?=@$this->option->site_logo; ?>" alt="vnsoft.net - thiết kế website"/>
-                </a>
-                <h1 class="hidden">Thiết kế website chuyện nghiệp</h1>
-            </div>
-            <div class="col-md-8 col-lg-6 col-sm-9 col-xs-8">
-                <form action="" method="get" class="form-search">
-                    <div class="input-group" style="position: relative; z-index: 99">
-                        <div class="input-group-btn search-panel ">
-                            <button type="button" class="btn btn-md btn-default dropdown-toggle"
-                                    data-toggle="dropdown">
-                                <span id="search_concept">Tất cả</span> <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" role="menu">
-                                <?php
-                                    if(count($product_cate) > 0){
-                                        foreach($product_cate as $cate){ ?>
-                                            <li>
-                                                <a href="<?=$cate->alias?>" title="<?=$cate->name?> - thiết kế website chuyên nghiệp">
-                                                    <option value="<?=$cate->alias?>"><?=$cate->name;?></option>
-                                                </a>
-                                            </li>
-                                <?php   }
-                                    }
-                                ?>
-                            </ul>
-                        </div>
+    </div><!-- /menu_mb -->
 
-                        <input type="text" class="input-md form-control" name="s"
-                               placeholder="Tìm kiếm website bạn mong muốn...">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-md btn-default search_top" type="submit">
-                                        Tìm kiếm
-                                    </button>
-                                </span>
-                    </div>
-                </form>
-                <div class="bottom-search">
-                    <ul class="list-inline">
-                        <?php
-                            if(count($product_cathot) > 0){
-                                foreach($product_cathot as $cathot){ ?>
-                                    <li><a href="<?=base_url($cathot->alias)?>" title="<?=$cathot->name; ?>- thiết kế website chuyên nghiệp"><?=$cathot->name;?> </a></li>
-                        <?php   }
-                            }
-                        ?>
+    <div class="clearfix clearfix-62 visible-sm visible-xs"></div>
+    <div class="header_top">
+        <div class="container">
+            <div class="row_pc">
+                <div class="col-md-3 col-sm-6 hidden-xs">
+                    <p><i class="fa fa-mobile-phone"></i> <?= $this->option->hotline1?></p>
+                </div>
+                <div class="col-md-9">
+                    <span><i class="fa fa-map-marker"></i> <?= $this->option->address?></span>
+                    <ul class="language">
+                        <li><a href="<?= base_url('home/lang/vi')?>"><img src="<?= base_url()?>img/lag1.jpg" alt=""/></a></li>
+                        <li><a href="<?= base_url('home/lang/ja')?>"><img src="<?= base_url()?>img/lag2.jpg" alt=""/></a></li>
+                        <li><a href="<?= base_url('home/lang/en')?>"><img src="<?= base_url()?>img/lag3.jpg" alt=""/></a></li>
                     </ul>
                 </div>
             </div>
-            <div class="col-md-2 col-lg-3 col-sm-0 clearfix login_sm">
-                <!--<ul>-->
-                <!--<li><a href="" title=""><i class="fa fa-question-circle" aria-hidden="true"></i>Hỗ trợ</a></li>-->
-                <!--<li><a href="" title=""><i class="fa fa-user-plus" aria-hidden="true"></i>Đăng ký</a></li>-->
-                <!--<li><a href="" title=""><i class="fa fa-user" aria-hidden="true"></i>Đăng nhập</a></li>-->
-                <!--</ul>-->
-            </div>
         </div>
     </div>
-</section>
+    <section class="sc_head_top">
+        <div class="container">
+            <div class="row_pc">
 
-<section class="header-bottom clearfix">
-    <div class="container">
-        <div class="visible-xs menu_mb">
-            <div class="row">
-                <div class="col-xs-2">
-                    <button class="nav-toggle">
-                        <div class="icon-menu">
-                            <span class="line line-1"></span>
-                            <span class="line line-2"></span>
-                            <span class="line line-3"></span>
-                        </div>
-                    </button>
-                </div>
-                <div class="col-xs-7">
-                    <div class="logo_mb">
-                        <a href="<?=base_url()?>" title="thiết kế website chuyên nghiệp">
-                            <img class="" src="<?=@$this->option->site_logo;?>" alt="vnsoft.net - thiết kế website"/>
-                        </a>
+                <div class="col-md-3 hidden-sm hidden-xs">
+                    <div class="row">
+                        <h1 class="logo_pc"><a href="<?= base_url()?>"><img src="<?= base_url($this->option->site_logo)?>" alt="<?= $this->option->site_name?>"/></a></h1>
                     </div>
                 </div>
-                <div class="col-xs-3">
-                    <div class="thongtincanhan hidden">
-                        <div class="dropdown ">
-                            <a id="dLabel" class=" f14b_525151 hover_co_ef7d00" title="Thiết kế website chuyên nghiệp" style=" cursor: pointer;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Thiết kế website
-                                <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu user_dropdown pull-right hidden hidden" role="menu" aria-labelledby="dLabel">
+                <div class="col-md-9 col-xs-12">
+                    <div class="row">
+                        <div class="menu_main">
+                            <nav class="nav is-fixed" role="navigation">
+                                <div class="wrapper wrapper-flush">
+                                    <div class="nav-container">
+										<?= @$menu_main; ?>
+                                        
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
 
-                                <li>
-                                    <a href="<?=base_url()?>" title="Thông tin cá nhân - vnsoft.net">Thông tin cá nhân</a>
-                                </li>
-                                <li>
-                                    <a href="<?=base_url()?>" title="đổi mật khẩu - vnsoft.net">Đổi mật khẩu</a>
-                                </li>
-                                <li>
-                                    <a href="<?=base_url()?>" title="đăng xuất - vnsoft.net">Đăng xuất</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="login_xs pull-right">
-                        <ul class="list-inline hidden">
-                            <li><a href="<?=base_url()?>" title="đăng ký - vnsoft.net"><i class="fa fa-user-plus" aria-hidden="true"></i>Đăng ký</a>
-                            </li>
-                            <li><a href="<?=base_url()?>" title="đăng nhập - vnsoft.net"><i class="fa fa-user" aria-hidden="true"></i>Đăng nhập</a></li>
-                        </ul>
                     </div>
                 </div>
+
+
             </div>
         </div>
-        <!-- /menu_mb -->
-        <div class="row">
-            <div class="menu_main">
-                <nav class="nav is-fixed" role="navigation">
-                    <div class="wrapper wrapper-flush">
-                        <div class="nav-container container">
-                            <div class="row_pc">
-                                <?=@$menu_main;?>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </div>
-</section>
-
+    </section>
 </header>
-<!-- End Header-->
+<!-- end header-->
 
 
 
